@@ -69,10 +69,10 @@ function show(){
         for(y = 0;y<8;y++){
             document.getElementById(x+''+y).style.background = bw(x+y);
             if(board[x][y]){
-                document.getElementById(x+''+y).firstElementChild.src="./piece/"+board[x][y]+'.png';
+                document.getElementById(x+''+y).firstElementChild.src="./asset/pieces/"+board[x][y]+'.png';
             }
             else{
-                document.getElementById(x+''+y).firstElementChild.src = "./piece/None.png" ;
+                document.getElementById(x+''+y).firstElementChild.src = "./asset/pieces/None.png" ;
             }
         }
     }
