@@ -5,6 +5,43 @@ function bw(a){
     return '#555555';
 }
 
+var ispromte = false;
+var WR = false;
+var WL = false;
+var WK = false;
+var BR = false;
+var BL = false;
+var BK = false;
+var board
+var turn = 1;
+var selx = -1;
+var sely = -1;
+var x;
+var y;
+
+function setting(){
+    make();
+    ispromte = false;
+    WR = false;
+    WL = false;
+    WK = false;
+    BR = false;
+    BL = false;
+    BK = false;
+    turn = 1;
+    selx = -1;
+    sely = -1;
+    board =[['BR','BN','BB','BQ','BK','BB','BN','BR'],
+    ['BP','BP','BP','BP','BP','BP','BP','BP'],
+    ['','','','','','','',''],
+    ['','','','','','','',''],
+    ['','','','','','','',''],
+    ['','','','','','','',''],
+    ['WP','WP','WP','WP','WP','WP','WP','WP'],
+    ['WR','WN','WB','WQ','WK','WB','WN','WR']];
+    show();
+}
+
 function make(){
     document.write('<div>')
     document.write('<div style="margin-left:560px;margin-top:80px;width:800px;display:inline-block;height:800px;border-width:3px;border-style:solid;border-color:black;">')
@@ -40,19 +77,6 @@ function show(){
         }
     }
 }
-var ispromte = false;
-var WR = false;
-var WL = false;
-var WK = false;
-var BR = false;
-var BL = false;
-var BK = false;
-
-var turn = 1;
-var selx = -1;
-var sely = -1;
-var x;
-var y;
 function pro_cli(event,obj){
     var what = obj.id[4];
     if(turn%2 == 1)
