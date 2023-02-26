@@ -122,8 +122,14 @@ function cli(event,obj){
                         cw = 'B'
                     else
                         cw = 'W'
-                    board[x][Math.floor(y+1/4)+3] = cw+'R';
-                    board[x][Math.floor(y+1/2)+2] = cw+'K';
+                    if(y == 7){
+                        board[x][5] = cw+'R';
+                        board[x][6] = cw+'K';
+                    }
+                    else{
+                        board[x][3] = cw+'R';
+                        board[x][2] = cw+'K';
+                    }
                     board[x][y] = '';
                     board[x][sely] = '';
                     castle = true;
