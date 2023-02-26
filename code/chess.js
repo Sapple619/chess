@@ -152,7 +152,7 @@ function cli(event,obj){
                 document.getElementById("pro_out").style.display = 'inline-block';
                 ["pro_B","pro_R","pro_N","pro_Q"].forEach(element => {
                     document.getElementById(element).style.display = 'block';
-                    document.getElementById(element).firstElementChild.src = "./piece/"+board[x][y][0] +element[4]+".png" ;
+                    document.getElementById(element).firstElementChild.src = "./asset/pieces/"+board[x][y][0] +element[4]+".png" ;
                 })
                 return;
             }
