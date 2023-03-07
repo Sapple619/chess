@@ -77,6 +77,7 @@ function show(){
         }
     }
 }
+
 function pro_cli(event,obj){
     var what = obj.id[4];
     if(turn%2 == 1)
