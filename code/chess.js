@@ -1,10 +1,3 @@
-function bw(a){
-    if (a%2 == 0){
-        return '#eeeeee';
-    }
-    return '#555555';
-}
-
 var ispromte = false;
 var WR = false;
 var WL = false;
@@ -18,6 +11,13 @@ var selx = -1;
 var sely = -1;
 var x;
 var y;
+
+function bw(a){
+    if (a%2 == 0){
+        return '#eeeeee';
+    }
+    return '#555555';
+}
 
 function setting(){
     make();
